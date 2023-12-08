@@ -1,0 +1,74 @@
+<html>
+<head>
+<title>Student registeration form</title>
+<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<h3>COMPANY REGISTRATION FORM</h3>
+<table align="center" cellpadding = "10">
+ 
+<!----- First Name ---------------------------------------------------------->
+<form name="myform" method="post" action="abc.jsp" onsubmit="return validateform()">
+<tr>
+<td>NAME</td>
+<td><input type="text" name="Name"  Placeholder="Enter Name" maxlength="30" id="name"/>
+(max 30 characters a-z and A-Z)
+<span id="name"></span>
+</td>
+</tr>
+    <tr>
+    <td>EMAIL ID</td>
+    <td><input type="text" name="Email" placeholder="Enter Email" maxlength="100" id="email"/>
+        <span id="emaill"></span>
+    </td>
+    </tr>
+    <tr>
+        <td>ZIP CODE</td>
+        <td><input type="text" name="Zip_Code" maxlength="5" id="zipcode"/>
+        (5 digit number)
+        <span id="zipee"></span>
+
+        </td>
+        </tr>
+
+        <tr>
+            <td>COUNTRY</td> 
+            <td>
+                <select name="country" id="country">
+                <option value="-1">country</option>
+                <option value="Cameroon">Cameroon</option>
+                <option value="Nigeria">Nigeria</option>
+                <option value="Ghana">Ghana</option>
+                <option value="America">America</option>
+                </select>
+            </td> 
+            </tr>
+            <tr>
+                <td>Age</td>
+                <td><input type="text" name="age" maxlength="18-35years" placeholder="Age" id="age"/>
+                (18-35years)
+                <span id="age"></span>
+                </td>
+                </tr>
+                <tr>
+                    <td>Do you have a driver's License?</td>
+                    <td>
+                     <input type="radio" name="" value="Yes" id="license"/>Yes
+                    <input type="radio" name="" value="No" id="license"/>No
+                    </td>
+                    </tr>
+                    <tr>
+                    <td>Leave a short message<br /><br /><br /></td>
+                    <td><textarea name="Address" rows="4" cols="30"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" align="center">
+                        <input type="submit" value="Sign up">
+                        </td>
+                        </tr>
+                        </table>
+                         
+        </form> 
+        <script src="./js/app.js"></script>
+      </body>
+        </html>
